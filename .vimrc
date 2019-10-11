@@ -2,7 +2,9 @@
 set number                                                                                               
 set hlsearch                                                                                             
 set incsearch                                                                                            
-set enc=utf-8                                                                                            
+set enc=utf-8     
+set guifont=Lucida_Console:h9:cANSI
+set guifontwide=Lucida_Console:h12
 syntax on                                                                                                
                                                                                                          
 let g:airline#extensions#tabline#enabled = 1                                                             
