@@ -1,7 +1,13 @@
 "curl -fLo ~/.vim/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-set number                                                                                               
+set nocompatible
+set number   
+
+"search and highlights
 set hlsearch                                                                                             
 set incsearch
+set ignorecase
+set smartcase
+
 set enc=utf-8 
 set guifont=Lucida_Console:h10:cANSI 
 set guifontwide=Lucida_Console:h12
@@ -10,6 +16,8 @@ set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNO
 syntax on 
 
 let g:airline#extensions#tabline#enabled = 1
+
+set showcmd
 
 call plug#begin('~/.vim/plugged')
 
@@ -63,4 +71,3 @@ map <Leader><Leader>j <Plug>(easymotion-j)
 map <Leader><Leader>k <Plug>(easymotion-k)
 map <Leader><Leader>h <Plug>(easymotion-linebackward)
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
