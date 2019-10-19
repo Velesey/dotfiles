@@ -19,6 +19,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 set showcmd
 
+
 call plug#begin('~/.vim/plugged')
 
 
@@ -61,13 +62,18 @@ let g:airline_theme = 'codedark'
 "set background=dark
 hi Search ctermbg=LightYellow
 hi Search ctermfg=Red
+
 "mappings
 map <C-n> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 let mapleader=" " 
+
 map <Leader><Leader>l <Plug>(easymotion-lineforward)
 map <Leader><Leader>L <Plug>(easymotion-overwin-line)
 map <Leader><Leader>j <Plug>(easymotion-j)
 map <Leader><Leader>k <Plug>(easymotion-k)
 map <Leader><Leader>h <Plug>(easymotion-linebackward)
+
+imap <C-L> <ESC>
+
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
