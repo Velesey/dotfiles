@@ -42,6 +42,9 @@ Plug 'OrangeT/vim-csharp'
 
 Plug 'vim-airline/vim-airline' "lean & mean status/tabline for vim that's light as air
 Plug 'majutsushi/tagbar'
+
+Plug 'kshenoy/vim-signature'
+
 call plug#end()
 
 

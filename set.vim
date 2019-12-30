@@ -10,3 +10,6 @@ set enc=utf-8
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
 let g:EasyMotion_smartcase = 1
+
+set clipboard=unnamed,unnamedplus
+
