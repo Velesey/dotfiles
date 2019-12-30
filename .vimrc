@@ -1,17 +1,6 @@
-"curl -fLo ~/.vim/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-set nocompatible
+source ~/.vimrc/set.vim
+
 set number   
-
-"search and highlights
-set hlsearch                                                                                             
-set incsearch
-set ignorecase
-set smartcase
-
-set enc=utf-8 
-set guifont=Lucida_Console:h10:cANSI 
-set guifontwide=Lucida_Console:h12
-set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 :setlocal spell spelllang=ru_yo,en_us
 syntax on 
 
@@ -64,16 +53,4 @@ hi Search ctermbg=LightYellow
 hi Search ctermfg=Red
 
 "mappings
-map <C-n> :NERDTreeToggle<CR>
-nmap <F8> :TagbarToggle<CR>
-let mapleader=" " 
-
-map <Leader><Leader>l <Plug>(easymotion-lineforward)
-map <Leader><Leader>L <Plug>(easymotion-overwin-line)
-map <Leader><Leader>j <Plug>(easymotion-j)
-map <Leader><Leader>k <Plug>(easymotion-k)
-map <Leader><Leader>h <Plug>(easymotion-linebackward)
-
-imap <C-L> <ESC>
-
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+source ~/.vimrc/mappings.vim
