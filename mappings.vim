@@ -14,6 +14,11 @@ nmap <Leader>t <Plug>(easymotion-t2)
 map  <Leader>f <Plug>(easymotion-bd-f)
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+map <Leader>w <Plug>CamelCaseMotion_w
+map <Leader>b <Plug>CamelCaseMotion_b
+map <Leader>e <Plug>CamelCaseMotion_e
+map <Leader>ge <Plug>CamelCaseMotion_ge
+
 nnoremap X "xX
 vnoremap X "xX
 nnoremap x "xx

@@ -25,11 +25,16 @@ Plug 'airblade/vim-gitgutter'
 
 "json
 Plug 'elzr/vim-json'
+
 "log
 Plug 'mtdl9/vim-log-highlighting'
+
 "search
+Plug 'majutsushi/tagbar'
 Plug 'kien/ctrlp.vim'
 
+"moving 
+Plug 'bkad/camelcasemotion'
 Plug 'easymotion/vim-easymotion'
 
 "syntax
@@ -41,8 +46,8 @@ Plug 'OmniSharp/omnisharp-vim'
 Plug 'OrangeT/vim-csharp'
 
 Plug 'vim-airline/vim-airline' "lean & mean status/tabline for vim that's light as air
-Plug 'majutsushi/tagbar'
 
+"marks
 Plug 'kshenoy/vim-signature'
 
 call plug#end()
