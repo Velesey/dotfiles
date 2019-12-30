@@ -19,6 +19,10 @@ map <Leader>b <Plug>CamelCaseMotion_b
 map <Leader>e <Plug>CamelCaseMotion_e
 map <Leader>ge <Plug>CamelCaseMotion_ge
 
+map <Leader>iw <Plug>CamelCaseMotion_iw
+map <Leader>ib <Plug>CamelCaseMotion_ib
+map <Leader>ie <Plug>CamelCaseMotion_ie
+
 nnoremap X "xX
 vnoremap X "xX
 nnoremap x "xx
