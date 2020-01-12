@@ -1,4 +1,8 @@
-source ~/.vimrc/set.vim
+if exists('g:configpath') == 0
+    let g:configpath = '~/vimrc/'
+endif
+
+exec 'source' g:configpath . '/set.vim'
 
 set number   
 :setlocal spell spelllang=ru_yo,en_us
@@ -61,4 +65,4 @@ hi Search ctermbg=LightYellow
 hi Search ctermfg=Red
 
 "mappings
-source ~/.vimrc/mappings.vim
+exec 'source' g:configpath . '/mappings.vim'
