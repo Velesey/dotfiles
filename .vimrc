@@ -49,6 +49,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'OrangeT/vim-csharp'
 
+"Airline
 Plug 'vim-airline/vim-airline' "lean & mean status/tabline for vim that's light as air
 
 "marks
@@ -58,11 +59,13 @@ call plug#end()
 
 
 "themes
-colorscheme codedark
+if exists('g:beautytheme') 
+    colorscheme codedark
+else
+    set background=dark
+endif
 let g:airline_theme = 'codedark'
-"set background=dark
-hi Search ctermbg=LightYellow
-hi Search ctermfg=Red
+
 
 "mappings
 exec 'source' g:configpath . '/mappings.vim'
