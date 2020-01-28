@@ -1,11 +1,11 @@
 if exists('g:configpath') == 0
     let g:configpath = '~/vimrc/'
 endif
-
+ 
 exec 'source' g:configpath . '/set.vim'
 
 set number   
-:setlocal spell spelllang=ru_yo,en_us
+":setlocal spell spelllang=ru_yo,en_us
 syntax on 
 
 let g:airline#extensions#tabline#enabled = 1
@@ -44,6 +44,7 @@ Plug 'easymotion/vim-easymotion'
 "syntax
 Plug 'sheerun/vim-polyglot'
 "Plug 'vim-syntastic/syntastic'
+Plug 'ekalinin/Dockerfile.vim'
 
 "C#
 Plug 'OmniSharp/omnisharp-vim'

@@ -23,22 +23,7 @@ map <Leader>iw <Plug>CamelCaseMotion_iw
 map <Leader>ib <Plug>CamelCaseMotion_ib
 map <Leader>ie <Plug>CamelCaseMotion_ie
 
-nnoremap X "xX
-vnoremap X "xX
-nnoremap x "xx
-vnoremap x "xx
-
-nnoremap d "xd
-vnoremap d "xd
-nnoremap D "xD
-vnoremap D "xD
-
-nnoremap c "xc
-vnoremap c "xc
-nnoremap C "xC
-vnoremap C "xC
-
-nnoremap s "xs
-vnoremap s "xs
-nnoremap S "xS
-vnoremap S "xS
+map <leader>a ggVG
+ 
+map gn :bn<cr>
+map gp :bp<cr>

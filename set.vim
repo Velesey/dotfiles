@@ -11,5 +11,5 @@ set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNO
 
 let g:EasyMotion_smartcase = 1
 
-set clipboard=unnamed,unnamedplus
+"set clipboard=unnamed,unnamedplus
 
