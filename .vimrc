@@ -56,6 +56,9 @@ Plug 'vim-airline/vim-airline' "lean & mean status/tabline for vim that's light 
 "marks
 Plug 'kshenoy/vim-signature'
 
+"cursors
+Plug 'terryma/vim-multiple-cursors'
+
 call plug#end()
 
 
