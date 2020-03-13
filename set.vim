@@ -2,7 +2,7 @@ set nocompatible
 
 "search and highlights
 set hlsearch                                                                                             
-set incsearch
+get incsearch
 set ignorecase
 set smartcase
 
@@ -12,4 +12,4 @@ set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNO
 let g:EasyMotion_smartcase = 1
 
 "set clipboard=unnamed,unnamedplus
-
+set invrelativenumber " user j and k for moving

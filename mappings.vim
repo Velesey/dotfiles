@@ -28,6 +28,8 @@ map <leader>a ggVG
 map gn :bn<cr>
 map gp :bp<cr>
 
+xnoremap p pgvy
+
 let g:multi_cursor_use_default_mapping=0
 let g:multi_cursor_start_word_key      = '<C-N>'
 let g:multi_cursor_select_all_word_key = '<A-n>'

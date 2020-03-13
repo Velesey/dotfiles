@@ -59,6 +59,13 @@ Plug 'kshenoy/vim-signature'
 "cursors
 Plug 'terryma/vim-multiple-cursors'
 
+"Tabular
+Plug 'godlygeek/tabular'
+
+"Markdown
+Plug 'tpope/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+
 call plug#end()
 
 
