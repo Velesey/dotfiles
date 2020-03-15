@@ -1,6 +1,6 @@
 let mapleader=" " 
 
-map <C-n> :NERDTreeToggle<CR>
+map <C-e> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
@@ -23,22 +23,20 @@ map <Leader>iw <Plug>CamelCaseMotion_iw
 map <Leader>ib <Plug>CamelCaseMotion_ib
 map <Leader>ie <Plug>CamelCaseMotion_ie
 
-nnoremap X "xX
-vnoremap X "xX
-nnoremap x "xx
-vnoremap x "xx
+map <leader>a ggVG
+ 
+map gn :bn<cr>
+map gp :bp<cr>
 
-nnoremap d "xd
-vnoremap d "xd
-nnoremap D "xD
-vnoremap D "xD
+xnoremap p pgvy
 
-nnoremap c "xc
-vnoremap c "xc
-nnoremap C "xC
-vnoremap C "xC
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_start_word_key      = '<C-N>'
+let g:multi_cursor_select_all_word_key = '<A-n>'
+let g:multi_cursor_start_key           = 'g<C-N>'
+let g:multi_cursor_select_all_key      = 'g<A-n>'
+let g:multi_cursor_next_key            = '<C-N>'
+let g:multi_cursor_prev_key            = '<C-P>'
+let g:multi_cursor_skip_key            = '<C-X>'
+let g:multi_cursor_quit_key            = '<Esc>'
 
-nnoremap s "xs
-vnoremap s "xs
-nnoremap S "xS
-vnoremap S "xS

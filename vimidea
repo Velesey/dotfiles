@@ -1,0 +1,28 @@
+"search and highlights
+set hlsearch                                                                                             
+set incsearch
+set ignorecase
+set smartcase
+
+set visualbell
+set noerrorbells
+
+set surround
+set easymotion
+set commentary
+set multiple-cursors
+
+let mapleader=" " 
+
+map <leader>a :action $SelectAll<CR>
+map <leader>c :action $Copy<CR>
+map <leader>v :action $Paste<CR>
+map <leader>x :action $Cut<CR>
+
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>h <Plug>(easymotion-linebackward)
+map <Leader>s <Plug>(easymotion-s2)
+map <Leader>t <Plug>(easymotion-t2)
+map <Leader>f <Plug>(easymotion-bd-f)
