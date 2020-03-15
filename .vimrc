@@ -17,6 +17,8 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 "theme
 Plug 'tomasiser/vim-code-dark'
 
+"surround 
+Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 
 "git
@@ -49,6 +51,8 @@ Plug 'vim-airline/vim-airline' "lean & mean status/tabline for vim that's light 
 
 "marks
 Plug 'kshenoy/vim-signature'
+
+Plug 'tpope/vim-repeat'
 
 call plug#end()
 
