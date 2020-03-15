@@ -2,7 +2,7 @@ set nocompatible
 
 "search and highlights
 set hlsearch                                                                                             
-get incsearch
+set incsearch
 set ignorecase
 set smartcase
 
