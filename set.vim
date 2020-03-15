@@ -13,3 +13,6 @@ let g:EasyMotion_smartcase = 1
 
 "set clipboard=unnamed,unnamedplus
 set invrelativenumber " user j and k for moving
+if has('mouse')
+  set mouse=a
+endif

@@ -1,6 +1,7 @@
 let mapleader=" " 
 
-map <C-e> :NERDTreeToggle<CR>
+nmap <C-e> :NERDTreeToggle<CR>
+nmap <C-e><C-e> :NERDTreeFind<CR>
 nmap <F8> :TagbarToggle<CR>
 
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
@@ -9,9 +10,12 @@ map <Leader>L <Plug>(easymotion-overwin-line)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-linebackward)
-nmap <Leader>s <Plug>(easymotion-s2)
-nmap <Leader>t <Plug>(easymotion-t2)
-map  <Leader>f <Plug>(easymotion-bd-f)
+map <Leader>s <Plug>(easymotion-s2)
+map <Leader>S <Plug>(easymotion-overwin-f2)
+map <Leader>t <Plug>(easymotion-t2)
+map <Leader>f <Plug>(easymotion-bd-f)
+map <Leader>F <Plug>(easymotion-overwin-f)
+
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 map <Leader>w <Plug>CamelCaseMotion_w
@@ -24,7 +28,16 @@ map <Leader>ib <Plug>CamelCaseMotion_ib
 map <Leader>ie <Plug>CamelCaseMotion_ie
 
 map <leader>a ggVG
+map <leader>ф ggVG
+
+nmap <leader>c "*yy 
+vmap <leader>c "*y 
+nmap <leader>с "*yy  
+vmap <leader>с "*y 
  
+map <leader>v "*p 
+map <leader>м "*p 
+
 map gn :bn<cr>
 map gp :bp<cr>
 
@@ -39,4 +52,3 @@ let g:multi_cursor_next_key            = '<C-N>'
 let g:multi_cursor_prev_key            = '<C-P>'
 let g:multi_cursor_skip_key            = '<C-X>'
 let g:multi_cursor_quit_key            = '<Esc>'
-
