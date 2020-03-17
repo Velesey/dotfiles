@@ -17,6 +17,7 @@ call plug#begin('~/.vim/plugged')
 
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'vifm/vifm.vim'
 
 "theme
 Plug 'tomasiser/vim-code-dark'
