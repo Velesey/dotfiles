@@ -41,6 +41,15 @@ map <leader>м "*p
 map gn :bn<cr>
 map gp :bp<cr>
 
+noremap zn f\|
+noremap zN f\|a
+inoremap <C-z>n <ESC>f\|a
+noremap zp F\|
+noremap zP F\|i
+inoremap <C-z>p <ESC>F\|i
+
+noremap <C-f> :Tabularize /\|<CR>
+
 xnoremap p pgvy
 
 let g:multi_cursor_use_default_mapping=0
