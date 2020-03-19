@@ -70,6 +70,7 @@ Plug 'godlygeek/tabular'
 "Markdown
 Plug 'tpope/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'dhruvasagar/vim-table-mode'
 
 call plug#end()
 

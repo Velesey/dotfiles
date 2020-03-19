@@ -16,3 +16,6 @@ set invrelativenumber " user j and k for moving
 if has('mouse')
   set mouse=a
 endif
+
+let g:table_mode_corner='|'
+
