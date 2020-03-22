@@ -43,6 +43,7 @@ Plug 'kien/ctrlp.vim'
 "moving 
 Plug 'bkad/camelcasemotion'
 Plug 'easymotion/vim-easymotion'
+Plug 'matze/vim-move'
 
 "syntax
 Plug 'sheerun/vim-polyglot'
@@ -74,6 +75,9 @@ Plug 'dhruvasagar/vim-table-mode'
 
 " Recover
 Plug 'chrisbra/Recover.vim'
+
+" Russian
+Plug 'powerman/vim-plugin-ruscmd'
 
 call plug#end()
 
