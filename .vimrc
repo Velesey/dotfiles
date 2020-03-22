@@ -72,7 +72,11 @@ Plug 'tpope/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'dhruvasagar/vim-table-mode'
 
+" Recover
+Plug 'chrisbra/Recover.vim'
+
 call plug#end()
+
 
 
 "themes
