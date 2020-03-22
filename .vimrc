@@ -21,6 +21,7 @@ Plug 'vifm/vifm.vim'
 
 "theme
 Plug 'tomasiser/vim-code-dark'
+Plug 'morhetz/gruvbox'
 
 "surround 
 Plug 'tpope/vim-surround'
@@ -84,7 +85,7 @@ call plug#end()
 
 
 "themes
-if exists('g:beautytheme') 
+if exists('g:beautytheme') || has("gui_running") 
     colorscheme codedark
 else
     set background=dark
