@@ -419,6 +419,7 @@ nnoremap O :!start %c<cr>
 
 " Open file in VsCode
 nnoremap i :!code %"c:p<cr>
+nnoremap I :!start nvim-qt %"c:p<cr>
 
 " Open file in the background using its default program
 nnoremap gb :file &<cr>l
@@ -444,7 +445,7 @@ elseif executable('xsel')
 endif
 
 " Mappings for faster renaming
-nnoremap I cw<c-a>
+"nnoremap I cw<c-a>
 nnoremap cc cw<c-u>
 nnoremap A cw
 
