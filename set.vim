@@ -19,3 +19,6 @@ endif
 
 let g:table_mode_corner='|'
 
+set backupdir=./,~/.backup/,/tmp//
+set directory=./,~/.swp/,/tmp//
+set undodir=./,~/.undo/,/tmp//
