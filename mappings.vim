@@ -27,6 +27,11 @@ map <Leader>iw <Plug>CamelCaseMotion_iw
 map <Leader>ib <Plug>CamelCaseMotion_ib
 map <Leader>ie <Plug>CamelCaseMotion_ie
 
+map f <Plug>Sneak_f
+map F <Plug>Sneak_F
+map t <Plug>Sneak_t
+map T <Plug>Sneak_T
+
 map <leader>a ggVG
 map <leader>ф ggVG
 
@@ -44,9 +49,11 @@ map gp :bp<cr>
 noremap zn f\|
 noremap zN f\|a
 inoremap <C-z>n <ESC>f\|a
+inoremap <C-z>т <ESC>f\|a
 noremap zp F\|
 noremap zP F\|i
 inoremap <C-z>p <ESC>F\|i
+inoremap <C-z>з <ESC>F\|i
 
 noremap <C-f> :Tabularize /\|<CR>
 

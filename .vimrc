@@ -45,6 +45,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'bkad/camelcasemotion'
 Plug 'easymotion/vim-easymotion'
 Plug 'matze/vim-move'
+Plug 'justinmk/vim-sneak'
 
 "syntax
 Plug 'sheerun/vim-polyglot'
@@ -85,7 +86,7 @@ call plug#end()
 
 
 "themes
-if exists('g:beautytheme') || has("gui_running") 
+if  exists('g:beautytheme') || exists('g:GuiLoaded') || has("gui_running") || has ("gui")
     colorscheme codedark
 else
     set background=dark
