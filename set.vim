@@ -11,7 +11,7 @@ set enc=utf-8
 let g:EasyMotion_smartcase = 1
 
 "set clipboard=unnamed,unnamedplus
-set invrelativenumber " user j and k for moving
+set invrelativenumber " use j and k for moving
 if has('mouse')
   set mouse=a
 endif
@@ -23,3 +23,4 @@ set directory=./,~/.swp/,/tmp//
 set undodir=./,~/.undo/,/tmp//
 
 let NERDTreeShowHidden=1
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

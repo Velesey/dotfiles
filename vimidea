@@ -11,6 +11,9 @@ set surround
 set easymotion
 set commentary
 set multiple-cursors
+set argtextobj
+set ReplaceWithRegister
+
 
 let mapleader=" " 
 

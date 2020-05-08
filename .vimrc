@@ -15,17 +15,20 @@ set showcmd
 
 call plug#begin('~/.vim/plugged')
 
-
+"file explorers
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'vifm/vifm.vim'
 
 "theme
 Plug 'tomasiser/vim-code-dark'
 Plug 'morhetz/gruvbox'
+Plug 'rakr/vim-one'
+Plug 'NLKNguyen/papercolor-theme'
 
 "surround 
 Plug 'tpope/vim-surround'
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-commentary'
 
 "git
 Plug 'tpope/vim-fugitive'
@@ -74,25 +77,31 @@ Plug 'godlygeek/tabular'
 Plug 'tpope/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'tpope/vim-liquid'
 
 " Recover
 Plug 'chrisbra/Recover.vim'
 
 " Russian
-Plug 'powerman/vim-plugin-ruscmd'
+Plug 'Velesey/vim-plugin-ruscmd'
+
+"paste
+Plug 'vim-scripts/ReplaceWithRegister'
+
+"code objects
+Plug 'vim-scripts/argtextobj.vim'
 
 call plug#end()
 
-
-
 "themes
 if  exists('g:beautytheme') || exists('g:GuiLoaded') || has("gui_running") || has ("gui")
-    colorscheme codedark
+   "colorscheme codedark
+    colorscheme gruvbox
 else
     set background=dark
 endif
-let g:airline_theme = 'codedark'
-
+"let g:airline_theme = 'codedark'
+let g:airline_theme = 'gruvbox'
 
 "mappings
 exec 'source' g:configpath . '/mappings.vim'
