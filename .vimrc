@@ -16,8 +16,8 @@ set showcmd
 call plug#begin('~/.vim/plugged')
 
 "file explorers
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'vifm/vifm.vim'
+Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind'] }
+Plug 'vifm/vifm.vim', { 'on':  ['Vifm'] }
 
 "theme
 Plug 'tomasiser/vim-code-dark'
