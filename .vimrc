@@ -91,6 +91,8 @@ Plug 'vim-scripts/ReplaceWithRegister'
 "code objects
 Plug 'vim-scripts/argtextobj.vim'
 
+Plug 'mhinz/vim-startify'
+
 call plug#end()
 
 "themes
