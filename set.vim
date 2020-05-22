@@ -18,9 +18,9 @@ endif
 
 let g:table_mode_corner='|'
 
-set backupdir=./,~/.backup/,/tmp//
-set directory=./,~/.swp/,/tmp//
-set undodir=./,~/.undo/,/tmp//
+set backupdir=~/.backup/,/tmp//
+set directory=~/.swp/,/tmp//
+set undodir=~/.undo/,/tmp//
 
 let NERDTreeShowHidden=1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
