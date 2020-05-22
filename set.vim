@@ -13,7 +13,7 @@ let g:EasyMotion_smartcase = 1
 "set clipboard=unnamed,unnamedplus
 set invrelativenumber " use j and k for moving
 if has('mouse')
-  set mouse=a
+  set mouse=r
 endif
 
 let g:table_mode_corner='|'
