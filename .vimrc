@@ -42,7 +42,9 @@ Plug 'mtdl9/vim-log-highlighting'
 
 "search
 Plug 'majutsushi/tagbar'
-Plug 'kien/ctrlp.vim'
+"Plug 'kien/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 "moving 
 Plug 'bkad/camelcasemotion'

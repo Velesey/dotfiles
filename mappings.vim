@@ -96,4 +96,8 @@ map <Leader>я [sz=1<CR>``
 map <Leader>Z ]sz=1<CR>``
 map <Leader>Я ]sz=1<CR>``
 map <F3> :setlocal spell! spelllang=ru_yo,en_us<CR>
-" /spelling
+" /spelling ------------------
+
+" fzf ---------------------
+nmap <C-p> :Files<CR>
+" /fzf ---------------------
