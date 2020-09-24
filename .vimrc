@@ -86,6 +86,7 @@ Plug 'chrisbra/Recover.vim'
 
 " Russian
 Plug 'Velesey/vim-plugin-ruscmd'
+Plug 'lyokha/vim-xkbswitch'
 
 "paste
 Plug 'vim-scripts/ReplaceWithRegister'
@@ -95,7 +96,11 @@ Plug 'vim-scripts/argtextobj.vim'
 
 Plug 'mhinz/vim-startify'
 
+" selection
+Plug 'machakann/vim-highlightedyank'
+
 call plug#end()
+
 
 "themes
 if  exists('g:beautytheme') || exists('g:GuiLoaded') || has("gui_running") || has ("gui")

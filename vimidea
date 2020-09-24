@@ -13,7 +13,10 @@ set commentary
 set multiple-cursors
 set argtextobj
 set ReplaceWithRegister
+set highlightedyank
 
+:set keep-english-in-normal
+:set keep-english-in-normal-and-restore-in-insert
 
 let mapleader=" " 
 
@@ -29,3 +32,6 @@ map <Leader>h <Plug>(easymotion-linebackward)
 map <Leader>s <Plug>(easymotion-s2)
 map <Leader>t <Plug>(easymotion-t2)
 map <Leader>f <Plug>(easymotion-bd-f)
+
+" change line with template
+map <Leader>x _yiw"zPf$Plxj

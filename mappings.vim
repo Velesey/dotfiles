@@ -54,6 +54,8 @@ map gp :bp<cr>
 
 " markdown table ------------------
 noremap zn f\|
+noremap <C-l> f\|
+noremap <C-h> F\|
 noremap zN f\|a
 inoremap <C-z>n <ESC>f\|a
 inoremap <C-z>т <ESC>f\|a
@@ -101,3 +103,6 @@ map <F3> :setlocal spell! spelllang=ru_yo,en_us<CR>
 " fzf ---------------------
 nmap <C-p> :Files<CR>
 " /fzf ---------------------
+
+" change line with template
+map <Leader>x _yiw"zPf$Plxj
