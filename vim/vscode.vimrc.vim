@@ -1,5 +1,5 @@
 if exists('g:configpath') == 0
-    let g:configpath = '~/vimrc/'
+    let g:configpath = '~/dotfiles/vim/'
 endif
 
 exec 'source' g:configpath . '/set.vim'
