@@ -7,6 +7,8 @@ set smartcase
 set visualbell
 set noerrorbells
 
+set ideajoin
+
 set surround
 set easymotion
 set commentary
@@ -14,9 +16,12 @@ set multiple-cursors
 set argtextobj
 set ReplaceWithRegister
 set highlightedyank
+set exchange
 
-:set keep-english-in-normal
-:set keep-english-in-normal-and-restore-in-insert
+set NERDTree
+
+"set keep-english-in-normal
+"set keep-english-in-normal-and-restore-in-insert
 
 let mapleader=" " 
 
