@@ -20,6 +20,11 @@ set exchange
 
 set NERDTree
 
+set sneak
+set quickscope
+set multicursor
+set matchit
+
 "set keep-english-in-normal
 "set keep-english-in-normal-and-restore-in-insert
 
@@ -40,3 +45,7 @@ map <Leader>f <Plug>(easymotion-bd-f)
 
 " change line with template
 map <Leader>x _yiw"zPf$Plxj
+
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+let g:qs_primary_color = '#ff0000'
+let g:qs_secondary_color = '#ff00ff'
