@@ -25,8 +25,8 @@ set quickscope
 set multicursor
 set matchit
 
-"set keep-english-in-normal
-"set keep-english-in-normal-and-restore-in-insert
+set keep-english-in-normal
+set keep-english-in-normal-and-restore-in-insert
 
 let mapleader=" " 
 

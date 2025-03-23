@@ -48,9 +48,9 @@ Plug 'junegunn/fzf.vim'
 
 "moving 
 Plug 'bkad/camelcasemotion'
-Plug 'easymotion/vim-easymotion'
-Plug 'matze/vim-move'
 Plug 'justinmk/vim-sneak'
+Plug 'matze/vim-move'
+Plug 'easymotion/vim-easymotion'
 
 "syntax
 Plug 'sheerun/vim-polyglot'
@@ -58,8 +58,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'ekalinin/Dockerfile.vim'
 
 "C#
-Plug 'OmniSharp/omnisharp-vim'
-Plug 'OrangeT/vim-csharp'
+"Plug 'OmniSharp/omnisharp-vim'
+"Plug 'OrangeT/vim-csharp'
 
 "Airline
 Plug 'vim-airline/vim-airline' "lean & mean status/tabline for vim that's light as air
@@ -70,7 +70,11 @@ Plug 'kshenoy/vim-signature'
 Plug 'tpope/vim-repeat'
 
 "cursors
-Plug 'terryma/vim-multiple-cursors'
+" if exists('g:vscode')
+    " Plug 'vscode-neovim/vscode-multi-cursor.nvim'
+" else
+    Plug 'terryma/vim-multiple-cursors'
+" endif
 
 "Tabular
 Plug 'godlygeek/tabular'
@@ -86,7 +90,9 @@ Plug 'chrisbra/Recover.vim'
 
 " Russian
 Plug 'Velesey/vim-plugin-ruscmd'
-Plug 'lyokha/vim-xkbswitch'
+if has('win32')
+    Plug 'lyokha/vim-xkbswitch'
+endif
 
 "paste
 Plug 'vim-scripts/ReplaceWithRegister'

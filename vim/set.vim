@@ -1,15 +1,17 @@
 set nocompatible
 
 "search and highlightsset hlsearch                                                                                             
-"set incsearch
-"set ignorecase
-"set smartcase
+set incsearch
+set ignorecase
+set smartcase
 
 set enc=utf-8 
-"set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
-let g:XkbSwitchEnabled = 1
-let g:XkbSwitchLib = 'c:\tools\neovim\Neovim\bin\libxkbswitch64.dll'
-let g:XkbSwitchIMappings = ['ru']
+if has('win32')
+  set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+  let g:XkbSwitchEnabled = 1
+  let g:XkbSwitchLib = 'c:\tools\neovim\Neovim\bin\libxkbswitch64.dll'
+  let g:XkbSwitchIMappings = ['ru']
+endif
 
 let g:EasyMotion_smartcase = 1
 
@@ -33,3 +35,9 @@ set shiftwidth=4
 set expandtab
 
 let g:eregex_default_enable = 0
+
+" optional key for macos
+let g:move_key_modifier = 'C'                
+let g:move_key_modifier_visualmode = 'C'     
+
+

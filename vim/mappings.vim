@@ -106,3 +106,16 @@ nmap <C-p> :Files<CR>
 
 " change line with template
 map <Leader>x _yiw"zPf$Plxj
+
+if exists('g:vscode')
+" vscode bookmarks plugin ------------------
+nmap mm <Cmd>call VSCodeNotify('bookmarks.toggle')<CR>
+nmap mi <Cmd>call VSCodeNotify('bookmarks.toggleLabeled')<CR>
+nmap mM <Cmd>call VSCodeNotify('bookmarks.toggleLabeled')<CR>
+nmap ma <Cmd>call VSCodeNotify('bookmarks.list')<CR>
+nmap mn <Cmd>call VSCodeNotify('bookmarks.jumpToNext')<CR>
+nmap mp <Cmd>call VSCodeNotify('bookmarks.jumpToPrevious')<CR>
+nmap mc <Cmd>call VSCodeNotify('bookmarks.clear')<CR>
+nmap mx <Cmd>call VSCodeNotify('bookmarks.clearFromAllFiles')<CR>
+" /vscode bookmarks plugin ------------------
+endif
