@@ -415,7 +415,8 @@ vnoremap w :view<cr>gv
 " Open file for preview
 nnoremap o :!quicklook %"c:p<cr>
 " Open file in windows
-nnoremap O :!start %c<cr>
+"nnoremap O :!start %c<cr>
+nnoremap O :!open %c<cr>
 
 " Open file in VsCode
 nnoremap i :!code %"c:p<cr>
